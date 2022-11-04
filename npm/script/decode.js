@@ -23,9 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.decodeChunks = void 0;
+exports.decodeChunk = void 0;
 const dntShim = __importStar(require("./_dnt.shims.js"));
-const decodeChunks = (chunk) => {
+const decodeChunk = (chunk) => {
     let data;
     if (chunk.data && chunk.name) {
         data = chunk.data;
@@ -59,4 +59,4 @@ const decodeChunks = (chunk) => {
         text: text,
     };
 };
-exports.decodeChunks = decodeChunks;
+exports.decodeChunk = decodeChunk;

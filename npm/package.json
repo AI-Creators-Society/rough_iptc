@@ -3,7 +3,7 @@
   "main": "./script/mod.js",
   "types": "./types/mod.d.ts",
   "name": "rough_iptc",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Get IPTC data from PNG image",
   "license": "MIT",
   "repository": {

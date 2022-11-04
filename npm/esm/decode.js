@@ -1,5 +1,5 @@
 import * as dntShim from "./_dnt.shims.js";
-export const decodeChunks = (chunk) => {
+export const decodeChunk = (chunk) => {
     let data;
     if (chunk.data && chunk.name) {
         data = chunk.data;

@@ -3,4 +3,4 @@ export interface DecodedChunk {
     keyword: string;
     text: string;
 }
-export declare const decodeChunks: (chunk: Chunk) => DecodedChunk;
+export declare const decodeChunk: (chunk: Chunk) => DecodedChunk;

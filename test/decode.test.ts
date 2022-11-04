@@ -1,4 +1,4 @@
-import { decodeChunks, extractChunks } from "../mod.ts"
+import { decodeChunk, extractChunks } from "../mod.ts"
 import { assertNotEquals } from "../deps.ts"
 
 const imagesPath = "test/images"
@@ -13,7 +13,7 @@ Deno.test("denocde chunks", async () => {
             const data = await Deno.readFile(`${imagesPath}/${num}${extension}`)
             const chunks = extractChunks(data)
             const decodedChunks = chunks
-                .map((chunk) => decodeChunks(chunk))
+                .map((chunk) => decodeChunk(chunk))
                 .filter((chunk) => chunk.keyword !== "" && chunk.text !== "")
 
             // console.log(decodedChunks)

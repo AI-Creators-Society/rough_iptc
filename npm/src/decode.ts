@@ -6,7 +6,7 @@ export interface DecodedChunk {
     text: string
 }
 
-export const decodeChunks = (chunk: Chunk): DecodedChunk => {
+export const decodeChunk = (chunk: Chunk): DecodedChunk => {
     let data!: Uint8Array
     if (chunk.data && chunk.name) {
         data = chunk.data
