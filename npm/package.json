@@ -1,0 +1,36 @@
+{
+  "module": "./esm/mod.js",
+  "main": "./script/mod.js",
+  "types": "./types/mod.d.ts",
+  "name": "rough_iptc",
+  "version": "0.0.3",
+  "description": "Get IPTC data from PNG image",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-art-club/iptc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ai-art-club/iptc/issues"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./esm/mod.js",
+        "types": "./types/mod.d.ts"
+      },
+      "require": {
+        "default": "./script/mod.js",
+        "types": "./types/mod.d.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "@deno/shim-deno-test": "~0.3.3",
+    "@deno/shim-crypto": "~0.3.1",
+    "textencoder-ponyfill": "1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.37"
+  }
+}

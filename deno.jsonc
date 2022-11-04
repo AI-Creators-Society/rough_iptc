@@ -1,6 +1,6 @@
 {
     "tasks": {
-        "test": "deno test -A --unstable",
+        "test": "deno test -A",
         "build:npm": "deno run -A ./build_npm.ts"
     }
 }

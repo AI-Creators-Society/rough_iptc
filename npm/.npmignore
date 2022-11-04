@@ -1,0 +1,6 @@
+src/
+test_runner.js
+yarn.lock
+pnpm-lock.yaml
+esm/testdata/
+script/test/
