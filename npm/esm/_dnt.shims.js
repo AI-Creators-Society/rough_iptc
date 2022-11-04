@@ -1,5 +1,3 @@
-import { Deno } from "@deno/shim-deno-test";
-export { Deno } from "@deno/shim-deno-test";
 import { Blob } from "buffer";
 export { Blob } from "buffer";
 import { crypto } from "@deno/shim-crypto";
@@ -7,7 +5,6 @@ export { crypto } from "@deno/shim-crypto";
 import { TextEncoder, TextDecoder } from "textencoder-ponyfill";
 export { TextEncoder, TextDecoder } from "textencoder-ponyfill";
 const dntGlobals = {
-    Deno,
     Blob,
     crypto,
     TextEncoder,

@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.dntGlobalThis = exports.TextDecoder = exports.TextEncoder = exports.crypto = exports.Blob = exports.Deno = void 0;
-const shim_deno_test_1 = require("@deno/shim-deno-test");
-var shim_deno_test_2 = require("@deno/shim-deno-test");
-Object.defineProperty(exports, "Deno", { enumerable: true, get: function () { return shim_deno_test_2.Deno; } });
+exports.dntGlobalThis = exports.TextDecoder = exports.TextEncoder = exports.crypto = exports.Blob = void 0;
 const buffer_1 = require("buffer");
 var buffer_2 = require("buffer");
 Object.defineProperty(exports, "Blob", { enumerable: true, get: function () { return buffer_2.Blob; } });
@@ -15,7 +12,6 @@ var textencoder_ponyfill_2 = require("textencoder-ponyfill");
 Object.defineProperty(exports, "TextEncoder", { enumerable: true, get: function () { return textencoder_ponyfill_2.TextEncoder; } });
 Object.defineProperty(exports, "TextDecoder", { enumerable: true, get: function () { return textencoder_ponyfill_2.TextDecoder; } });
 const dntGlobals = {
-    Deno: shim_deno_test_1.Deno,
     Blob: buffer_1.Blob,
     crypto: shim_crypto_1.crypto,
     TextEncoder: textencoder_ponyfill_1.TextEncoder,
